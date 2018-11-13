@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Datos personales</string>
+    <string name="inputNameHint">Introduce tu nombre</string>
+    <string name="inputSurnameHint">Introduce tu apellido</string>
+    <string name="inputAgeHint">Introduce tu edad</string>
+    <string name="radialButtonMen">Hombre</string>
+    <string name="radialButtonWomen">Mujer</string>
+    <string name="switchHijos">Tiene hijos</string>
+    <string name="switchHijosRespuesta">No / Sí</string>
+    <string name="ResumenInfo">Resumen</string>
+    <string name="errorName">Falta el nombre</string>
+    <string name="errorSurname">Falta el apellido</string>
+    <string name="errorAge">Falta la edad</string>
+    <string name="mayorDeEdadNegativo">No es mayor de edad</string>
+    <string name="mayorDeEdadPositivo">Es mayor de edad</string>
+    <string name="hijosNegativo">No tiene hijos</string>
+    <string name="hijosPositivo">Tiene hijos</string>
+
+
+/* Aquí tenemos el contenido del spinner del estado civil */
+
+    <string-array name="SpinnerCivilStatus">
+        <item>Casado/a</item>
+        <item>Soltero/a</item>
+        <item>Comprometido/a</item>
+        <item>Divorciado/a</item>
+        <item>Viudo/a</item>
+    </string-array>
+
+</resources>

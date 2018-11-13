@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Personal data</string>
+    <string name="inputNameHint">Insert your name</string>
+    <string name="inputSurnameHint">Insert your surname</string>
+    <string name="inputAgeHint">Insert your age</string>
+    <string name="radialButtonMen">Men</string>
+    <string name="radialButtonWomen">Women</string>
+    <string name="switchHijos">Do you have kids?</string>
+    <string name="switchHijosRespuesta">No / Yes</string>
+    <string name="ResumenInfo">Summary</string>
+    <string name="errorName"><font fgcolor='#FFFF3B30'>The name is missing</font></string>
+    <string name="errorSurname"><font fgcolor='#FFFF3B30'>The surname is missing</font></string>
+    <string name="errorAge"><font fgcolor='#FFFF3B30'>The age is missing</font></string>
+    <string name="mayorDeEdadNegativo">is not old enough</string>
+    <string name="mayorDeEdadPositivo">is old enough</string>
+    <string name="hijosNegativo">Do not have kids</string>
+    <string name="hijosPositivo">Do have kids</string>
+
+
+/* Aquí tenemos el contenido del spinner del estado civil */
+
+    <string-array name="SpinnerCivilStatus">
+        <item>Married</item>
+        <item>Single</item>
+        <item>Engaged</item>
+        <item>Divorced</item>
+        <item>Widower</item>
+    </string-array>
+
+</resources>

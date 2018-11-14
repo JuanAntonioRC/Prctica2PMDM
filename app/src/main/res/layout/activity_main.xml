@@ -2,98 +2,64 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="20dp"
-    android:orientation="vertical"
+    style="@style/layoutPrincipal"
     tools:context=".MainActivity">
 
     <EditText
+        style="@style/InputTextALLCHART"
         android:id="@+id/inputName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
         android:hint="@string/inputNameHint"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
         android:autofillHints="" />
 
     <EditText
+        style="@style/InputTextALLCHART"
         android:id="@+id/inputSurname"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/inputSurnameHint"
-        android:inputType="textPersonName"
-        android:textAlignment="center" />
+        android:hint="@string/inputSurnameHint"/>
 
     <EditText
+        style="@style/InputTextALLCHART"
         android:id="@+id/inputAge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
         android:hint="@string/inputAgeHint"
-        android:inputType="number"
-        android:textAlignment="center" />
+        android:inputType="number" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        style="@style/layoutBotones">
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:layout_marginLeft="55dp"
-            android:orientation="horizontal">
+            style="@style/RadioGroupStyle"
+            android:id="@+id/radioGroup">
 
             <RadioButton
+                style="@style/RadioButton"
                 android:id="@+id/radialButtonMen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layoutDirection="ltr"
                 android:text="@string/radialButtonMen" />
 
             <RadioButton
+                style="@style/RadioButton"
                 android:id="@+id/radialButtonWomen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="@string/radialButtonWomen" />
 
         </RadioGroup>
     </LinearLayout>
 
     <Spinner
-        android:id="@+id/spinnerCivilStatus"
-        android:layout_width="match_parent"
-        android:layout_height="36dp"
-        android:layout_marginLeft="40dp"
-        android:textAlignment="center" />
+        style="@style/StyleSpinner"
+        android:id="@+id/spinnerCivilStatus"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
+        style="@style/StyleTextViewandSwitchContainer">
 
         <TextView
+            style="@style/StyleTextView"
             android:id="@+id/viewHijos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/switchHijos"
-            android:textAlignment="center" />
+            android:text="@string/switchHijos"/>
 
         <Switch
+            style="@style/StyleSwitch"
             android:id="@+id/switchHijos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/switchHijosRespuesta"
-            android:textAlignment="center" />
+ />
     </LinearLayout>
 
     <LinearLayout
@@ -102,25 +68,21 @@
         android:orientation="horizontal">
 
         <Button
+            style="@style/StyleResumenButton"
             android:id="@+id/ButtonResumen"
-            android:layout_width="262dp"
-            android:layout_height="wrap_content"
             android:text="@string/ResumenInfo" />
 
         <ImageButton
             android:id="@+id/clearButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            style="@style/StyleImangeButton"
+            android:contentDescription="@string/espacio"
             app:srcCompat="@android:drawable/ic_notification_clear_all" />
 
     </LinearLayout>
 
     <TextView
+        style="@style/StyleTextView2"
         android:id="@+id/resultadoResumen"
-        android:layout_width="match_parent"
-        android:layout_height="106dp"
-        android:text=" "
-        android:textStyle="bold" />
+        android:text="@string/espacio" />
 
 </LinearLayout>

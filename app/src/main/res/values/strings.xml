@@ -15,9 +15,10 @@
     <string name="mayorDeEdadPositivo">is old enough</string>
     <string name="hijosNegativo">Do not have kids</string>
     <string name="hijosPositivo">Do have kids</string>
+    <string name="espacio" />
 
 
-/* Aquí tenemos el contenido del spinner del estado civil */
+    /* Aquí tenemos el contenido del spinner del estado civil */
 
     <string-array name="SpinnerCivilStatus">
         <item>Married</item>

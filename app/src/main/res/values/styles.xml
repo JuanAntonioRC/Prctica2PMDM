@@ -8,4 +8,197 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="layoutPrincipal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="layoutBotones">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:fontFamily">@font/arialrounded</item>
+    </style>
+
+    <style name="InputTextALLCHART">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/arialrounded</item>
+    </style>
+
+    <style name="RadioGroupStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:fontFamily">@font/arialrounded</item>
+    </style>
+
+    <style name="StyleSpinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/arialrounded</item>
+    </style>
+
+    <style name="StyleTextViewandSwitchContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="StyleTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/arialrounded</item>
+    </style>
+
+    <style name="StyleSwitch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/arialrounded</item>
+    </style>
+
+    <style name="StyleImangeButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="StyleTextView2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">106dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/arialrounded</item>
+    </style>
+
+    <style name="StyleResumenButton">
+        <item name="android:layout_width">263dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/arialrounded</item>
+    </style>
+
+    <style name="LandNameInputValues">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginStart">33dp</item>
+        <item name="android:layout_marginTop">21dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="LandSurnameInputValues">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginStart">33dp</item>
+        <item name="android:layout_marginTop">72dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="LandAgeInputValues">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginTop">122dp</item>
+        <item name="android:layout_marginLeft">33dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textPersonName</item>
+    </style>
+
+    <style name="LandradioGroup">
+        <item name="android:layout_width">213dp</item>
+        <item name="android:layout_height">77dp</item>
+        <item name="android:layout_marginLeft">65dp</item>
+        <item name="android:layout_marginBottom">-105dp</item>
+    </style>
+
+    <style name="LandRadioButton1">
+        <item name="android:layout_width">172dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LandRadioButton2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LandSpinner">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginStart">279dp</item>
+        <item name="android:layout_marginBottom">146dp</item>
+    </style>
+    
+    <style name="LandButtonResumen">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginStart">38dp</item>
+        <item name="android:layout_marginBottom">32dp</item>
+    </style>
+    
+    <style name="LandImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignTop">@+id/ButtonResumen</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_marginStart">137dp</item>
+    </style>
+    
+    <style name="LandviewHijos">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginEnd">193dp</item>
+        <item name="android:layout_marginBottom">108dp</item>
+    </style>
+    
+    <style name="Landswitchhijos">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignTop">@+id/inputAge</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginEnd">75dp</item>
+    </style>
+    
+    <style name="LandTexviewResumen">
+        <item name="android:layout_width">285dp</item>
+        <item name="android:layout_height">66dp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginEnd">21dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+    </style>
+    
+    <style name="Theme.AppTheme.Light.NoActionBar" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>

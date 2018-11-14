@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 radialButtonWomen.setChecked(false);
                 switchHijos.setChecked(false);
                 resultadoResumen.setText("");
+                spinnerCivilStatus.setSelection(0);
                 inputName.setHint(getResources().getString(R.string.inputNameHint));
                 inputSurname.setHint(getResources().getString(R.string.inputSurnameHint));
                 inputAge.setHint(getResources().getString(R.string.inputAgeHint));
@@ -72,20 +73,34 @@ public class MainActivity extends AppCompatActivity {
                 String nombre = inputName.getText().toString();
                 String apellido = inputSurname.getText().toString();
                 String edad = inputAge.getText().toString();
-                int edadNumero = Integer.parseInt(edad);
-                String mayorDeEdad;
+                String mayorDeEdad = null;
                 String hijos;
                 String civilStatus = spinnerCivilStatus.getSelectedItem().toString();
+                String Sexo;
 
+                if (radialButtonMen.isChecked()){
 
-                if (edadNumero < 18){
+                    Sexo = getResources().getString(R.string.radialButtonMen);
+                } else {
 
-                    mayorDeEdad = getResources().getString(R.string.mayorDeEdadNegativo);
+                    Sexo = getResources().getString(R.string.radialButtonWomen);
                 }
-                else {
 
-                    mayorDeEdad = getResources().getString(R.string.mayorDeEdadPositivo);
+
+                if (edad.length() != 0){
+
+                    int edadNumero = Integer.parseInt(edad);
+
+                    if (edadNumero < 18){
+
+                        mayorDeEdad = getResources().getString(R.string.mayorDeEdadNegativo);
+
+                    } else {
+
+                        mayorDeEdad = getResources().getString(R.string.mayorDeEdadPositivo);
+                    }
                 }
+
 
                 if (switchHijos.isChecked()) {
 
@@ -96,9 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
                     hijos = getResources().getString(R.string.hijosNegativo);
                 }
-
-
-                resultadoResumen.setText(apellido + ", " + nombre + ", " + mayorDeEdad + ", " + civilStatus + ", " + hijos);
+                resultadoResumen.setText(apellido + ", " + nombre + ", " + mayorDeEdad + ", " + Sexo + " " + civilStatus + ", " + hijos);
 
 
 
@@ -109,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
                 if (inputName.getText().toString().isEmpty()){
 
 
-                    resultadoResumen.setText(apellido + ", " + getResources().getString(R.string.errorName) + ", " +  mayorDeEdad + ", " + civilStatus + ", " + hijos );
+                    resultadoResumen.setText(apellido + ", " + getResources().getString(R.string.errorName) + ", " +  mayorDeEdad + ", " + Sexo + " " + civilStatus + ", " + hijos );
                     inputName.setHint(getResources().getString(R.string.errorName));
                     inputName.setHintTextColor(getResources().getColor(R.color.Error));
 
@@ -118,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                 if (inputSurname.getText().toString().isEmpty()){
 
 
-                    resultadoResumen.setText(getResources().getString(R.string.errorSurname) + ", " + nombre + ", " + mayorDeEdad + ", " + civilStatus + ", " + hijos);
+                    resultadoResumen.setText(getResources().getString(R.string.errorSurname) + ", " + nombre + ", " + mayorDeEdad + ", " + Sexo + " " + civilStatus + ", " + hijos);
                     inputSurname.setHint(getResources().getString(R.string.errorSurname));
                     inputSurname.setHintTextColor(getResources().getColor(R.color.Error));
 
@@ -127,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
                 if (inputAge.getText().toString().isEmpty()){
 
 
-                    resultadoResumen.setText(apellido + ", " + nombre + ", " + getResources().getString(R.string.errorAge) + ", " + civilStatus + ", " + hijos);
+                    resultadoResumen.setText(apellido + ", " + nombre + ", " + getResources().getString(R.string.errorAge) + ", " + Sexo + " " + civilStatus + ", " + hijos);
                     inputAge.setHint(getResources().getString(R.string.errorAge));
                     inputAge.setHintTextColor(getResources().getColor(R.color.Error));
 
@@ -135,25 +148,25 @@ public class MainActivity extends AppCompatActivity {
 
                 if (inputName.getText().toString().isEmpty() && inputSurname.getText().toString().isEmpty()) {
 
-                    resultadoResumen.setText(getResources().getString(R.string.errorName) + ", " + getResources().getString(R.string.errorSurname) + ", " + mayorDeEdad + ", " + civilStatus + ", " + hijos);
+                    resultadoResumen.setText(getResources().getString(R.string.errorName) + ", " + getResources().getString(R.string.errorSurname) + ", " + mayorDeEdad + ", " + Sexo + " " + civilStatus + ", " + hijos);
 
                 }
 
                 if (inputName.getText().toString().isEmpty() && inputAge.getText().toString().isEmpty()){
 
-                    resultadoResumen.setText(apellido + ", " + getResources().getString(R.string.errorName) + ", " + getResources().getString(R.string.errorAge) + ", " + civilStatus + ", " + hijos);
+                    resultadoResumen.setText(apellido + ", " + getResources().getString(R.string.errorName) + ", " + getResources().getString(R.string.errorAge) + ", " + Sexo + " " + civilStatus + ", " + hijos);
 
                 }
 
                 if (inputSurname.getText().toString().isEmpty() && inputAge.getText().toString().isEmpty()){
 
-                    resultadoResumen.setText(getResources().getString(R.string.errorSurname) + ", " + nombre +getResources().getString(R.string.errorAge) + ", " + civilStatus + ", " + hijos);
+                    resultadoResumen.setText(getResources().getString(R.string.errorSurname) + ", " + nombre +getResources().getString(R.string.errorAge) + ", " + Sexo + " " + civilStatus + ", " + hijos);
                 }
 
                 if (inputName.getText().toString().isEmpty() && inputAge.getText().toString().isEmpty() && inputSurname.getText().toString().isEmpty()) {
 
 
-                    resultadoResumen.setText(getResources().getString(R.string.errorSurname) + ", " + getResources().getString(R.string.errorName) + ", " + getResources().getString(R.string.errorAge) + ", " + civilStatus + ", " + hijos);
+                    resultadoResumen.setText(getResources().getString(R.string.errorSurname) + ", " + getResources().getString(R.string.errorName) + ", " + getResources().getString(R.string.errorAge) + ", " + Sexo + " " + civilStatus + ", " + hijos);
 
                 }
             }

@@ -15,9 +15,10 @@
     <string name="mayorDeEdadPositivo">Es mayor de edad</string>
     <string name="hijosNegativo">No tiene hijos</string>
     <string name="hijosPositivo">Tiene hijos</string>
+    <string name="espacio" />
 
 
-/* Aquí tenemos el contenido del spinner del estado civil */
+    /* Aquí tenemos el contenido del spinner del estado civil */
 
     <string-array name="SpinnerCivilStatus">
         <item>Casado/a</item>

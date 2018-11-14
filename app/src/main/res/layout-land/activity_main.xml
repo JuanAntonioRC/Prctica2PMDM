@@ -6,118 +6,64 @@
     android:layout_height="match_parent">
 
     <EditText
+        style="@style/LandNameInputValues"
         android:id="@+id/inputName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="21dp"
-        android:ems="10"
-        android:hint="@string/inputNameHint"
-        android:inputType="textPersonName" />
+        android:hint="@string/inputNameHint" />
 
     <EditText
+        style="@style/LandSurnameInputValues"
         android:id="@+id/inputSurname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="72dp"
-        android:ems="10"
-        android:hint="@string/inputSurnameHint"
-        android:inputType="textPersonName" />
+        android:hint="@string/inputSurnameHint" />
 
     <EditText
+        style="@style/LandAgeInputValues"
         android:id="@+id/inputAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignStart="@+id/inputName"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="122dp"
-        android:ems="10"
-        android:hint="@string/inputAgeHint"
-        android:inputType="textPersonName" />
+        android:hint="@string/inputAgeHint" />
 
     <RadioGroup
-        android:layout_width="213dp"
-        android:layout_height="77dp"
+        style="@style/LandradioGroup"
         android:layout_above="@+id/inputSurname"
-        android:layout_alignStart="@+id/spinnerCivilStatus"
-        android:layout_marginLeft="65dp"
-        android:layout_marginBottom="-105dp">
+        android:layout_alignStart="@+id/spinnerCivilStatus">
 
         <RadioButton
+            style="@style/LandRadioButton1"
             android:id="@+id/radialButtonMen"
-            android:layout_width="172dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/radialButtonMen" />
 
         <RadioButton
+            style="@style/LandRadioButton2"
             android:id="@+id/radialButtonWomen"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:text="@string/radialButtonWomen" />
     </RadioGroup>
 
     <Spinner
-        android:id="@+id/spinnerCivilStatus"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="279dp"
-        android:layout_marginBottom="146dp" />
+        style="@style/LandSpinner"
+        android:id="@+id/spinnerCivilStatus" />
 
     <Button
         android:id="@+id/ButtonResumen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginBottom="32dp"
-        android:text="Button" />
+        style="@style/LandButtonResumen"
+        android:text="@string/ResumenInfo" />
 
     <ImageButton
         android:id="@+id/clearButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/ButtonResumen"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="137dp"
+        style="@style/LandImageButton"
+        android:contentDescription="@string/espacio"
         app:srcCompat="@android:drawable/ic_notification_clear_all" />
 
     <TextView
+        style="@style/LandviewHijos"
         android:id="@+id/viewHijos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="193dp"
-        android:layout_marginBottom="108dp"
         android:hint="@string/switchHijos" />
 
     <Switch
+        style="@style/Landswitchhijos"
         android:id="@+id/switchHijos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/inputAge"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="75dp"
         android:text="@string/switchHijosRespuesta" />
 
     <TextView
-        android:id="@+id/resultadoResumen"
-        android:layout_width="285dp"
-        android:layout_height="66dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="21dp"
-        android:layout_marginBottom="7dp" />
+        style="@style/LandTexviewResumen"
+        android:id="@+id/resultadoResumen" />
 
 </RelativeLayout>

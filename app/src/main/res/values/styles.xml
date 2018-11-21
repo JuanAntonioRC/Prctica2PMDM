@@ -201,4 +201,6 @@
     </style>
     
     <style name="Theme.AppTheme.Light.NoActionBar" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="miTema" parent="AppTheme" />
 </resources>
